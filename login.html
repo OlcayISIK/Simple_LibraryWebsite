@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title> Library Login Page</title>
+       <link rel="stylesheet" type="text/css" href="login.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"> 
+    </head>
+
+    <body>
+        <div class="loginpage" id="logpage">
+            <div class="loginform" id="inputform">
+                <div class="buttonbox">
+                    <div id="button"></div>
+                    <button type="button" class="togglebutton" onclick="signin()">Sign-In</button>
+                    <button type="button" class="togglebutton" onclick="signup()">Sign-Up</button>
+                </div>
+                <form id="form_id" action="file:///C:/Users/ABRA/Desktop/Ders/InternetPrograming/library.html">
+                        <table id="login" class="logininputgroup"> 
+                    <tbody>   
+                     <th> <img src="booklogin.jpg" class="picture"> </th>
+                        <tr>
+                            <td>
+                                <input type="text" class="inputfield" id="loginname" placeholder="Username">
+                                <td><div id="errusername" style="float:right;"></div></td>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="password" class="inputfield" id="loginpassword" placeholder="Password">
+                                <td><div id="errvalidation" style="float:right;"></div></td>
+                            </td>
+                        </tr>
+                   
+                   <tr>
+                       <td colspan="2">
+                        <input type="submit" onclick="loginvalidate(),finalloginvalidate()" class="loginbtn" id="golibrary" value="Sign-In">                
+                       </td>
+                    </tr>
+                </tbody>
+                </table>
+              </form>
+
+                <table id="register" class="logininputgroup">
+                    <tbody>
+                      <th> <img src="booksignup.jpg" class="picture"> </th>
+                    <tr>
+                      <td><input type="text" class="inputfield" id="first" placeholder="Firstname" ></td>
+                      <td><div id="errFirst" style="float:right;"></div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="inputfield" id="last" placeholder="LastName"></td>
+                      <td><div id="errLast" style="float:right;"></div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="inputfield" id="email" placeholder="E-mail" ></td>
+                      <td><div id="errEmail" style="float:right;"></div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="inputfield" id="uid" placeholder="Username"></td>
+                      <td><div id="errUid" style="float:right;"></div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="password" class="inputfield" id="password" placeholder="Password"></td>
+                      <td><div  id="errPassword" style="float:right;"></div></td>
+                    </tr>
+                    <tr>
+                      <td><input type="password" class="inputfield" id="confirm" placeholder="Confirm Password" ></td>
+                      <td><div  id="errConfirm" style="float:right;"></div></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><input type="button" class="loginbtn" id="create"  value="Sign-Up" onclick="validate();finalValidate();"></td>
+                    </tr>
+                  </tbody></table>
+            </div>
+        </div>
+        <script src="login.js"></script> 
+        <script src="jquery.js"></script>
+    </body>
+</html>

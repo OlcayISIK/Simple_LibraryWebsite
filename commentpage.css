@@ -1,0 +1,132 @@
+#commentbodydiv{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(donatepage.png);
+    position: absolute;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+input[type="text"],textarea,select{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.commentfield{
+    box-sizing: border-box;
+    width: 90%;
+    padding: 7px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin: 20px;
+}
+.commentfield:focus{
+    border-color: #80bdff;
+    outline: 0;
+}
+
+.btn{
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007BFF;
+    border: 1px solid #007bff;
+}
+.btn:hover{
+    background-color: #0069d9;
+    border: 1px solid #0062cc;
+}
+.col-25{
+    float: left;
+    width: 5%;
+}
+.col-75{
+    float: left;
+    width: 75%;
+}
+.clearfloat:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#containerform{
+background-color: #f2f2f2;
+padding: 20px;
+border-radius: 5px;
+}
+
+.photo{
+    width: 80px;
+    height: 80px;
+  }
+  #bookname{
+    font-size: 200px;
+    font-weight: bold;
+    font-style: italic;
+    }
+
+.criticismliststyle{
+    width: 90%;
+    margin-left: 70px;
+}
+.criticismliststyle h2{
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.criticismliststyle ul {
+    position: relative;
+    background: #fff;
+}
+.criticismliststyle ul li{
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 1);
+    transition:0.5s;
+}
+.criticismliststyle ul:hover li{
+    opacity: 0.2;
+}
+.criticismliststyle ul li:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    opacity: 1;
+    background: #25bcff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+.criticismliststyle ul li span{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #25bcff;
+    color:#fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+.criticismliststyle li ul:hover span{
+    background: #fff;
+    color:#25bcff;
+}
+#commentlist{
+    margin-bottom: 40px;
+}

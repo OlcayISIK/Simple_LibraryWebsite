@@ -1,0 +1,76 @@
+#donatebodydiv{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(donatepage.png);
+    position: absolute;
+   
+}
+.donatecontainer{
+    width: 40%;
+    padding: 10% 0 0;
+    margin:auto;
+    display: inline-block;
+    margin-left: 100px;
+    
+}
+.donateform{
+    width: 680px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background:white;
+    padding: 5px;
+    border: solid 1px;
+    overflow: hidden;
+   
+}
+
+.backgroundpicture{
+    width: 30%;
+    height: 70%;
+    border-radius: 100%;
+    float: left;
+    margin-left: 60px;
+    margin-top: 180px;
+}
+
+.donateinputgroup{
+    top:220px;
+    width: 90%;
+}
+
+.inputfield{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 25px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+.donatebtn{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    margin-left: 40px;
+    border: 0;
+}
+.donatebtn i {
+    line-height: 100px;
+    font-size: 50px;
+    transition: 0.2s linear;
+    margin-left: 8px;
+}
+.donatebtn:hover i{
+    transform: scale(1.3);
+}
+

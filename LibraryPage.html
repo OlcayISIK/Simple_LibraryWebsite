@@ -1,0 +1,193 @@
+<html>
+    
+    <link rel="stylesheet" type="text/css" href="library.css">
+    <link rel="stylesheet" type="text/css" href="donatepage.css">
+    <link rel="stylesheet" type="text/css" href="commentpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"> 
+    <body onload="refreshlist();comboBox();createscoretable();createcommenttable();">
+      <div class="menubar">
+      <ul>
+        <li class="home" onclick="gohome()"><a href="#"><i class="fas fa-home"></i>Home</a></li>
+        <li onclick="gocomment()"><a href="#"><i class="far fa-comment-dots"></i>Make Comment</a></li>
+        <li onclick="changedivs()"><a href="#"><i class="fas fa-book"></i>Donate Books</a></li>
+        <li><a href="#footer"><i class="fas fa-address-card"></i>About Us</a></li>
+        <li><a href="#"><i class="fas fa-user"></i>Contact</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="https://www.instagram.com/olcaytug20/"><i class="fas fa-book"></i>İnstagram</a></li>
+            <li><a href="https://twitter.com/"><i class="fas fa-address-card"></i>Twitter</a></li>
+            <li><a href="www.linkedin.com/in/olcayisik"><i class="fas fa-user"></i>Linked-In</a></li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </li>
+  <div id="librarybodydiv">
+<div class="container">
+      <img src="libraryphoto1.jpg" class="active sliderimage">
+      <img src="libraryphoto2.jpg" class="sliderimage">
+      <img src="libraryphoto3.jpg" class="sliderimage">
+      <img src="libraryphoto4.jpg" class="sliderimage">
+      <img src="libraryphoto5.jpg" class="sliderimage">
+    </div>   
+    <div style="clear:both;"></div>
+  
+
+    <div class="books">
+      <div class="searchdiv">
+        <input type="text" id="search-box" placeholder="Search Book" onkeyup="searchbooks()">
+      </div>
+      <button id="sortbutton" style="margin-bottom: 15px;" onclick="sortList()"><i class="fas fa-sort-alpha-down"></i>Sort Books</button>
+      <button id="refreshbtn"  onclick="refreshlist()"><i class="fas fa-sync"></i> Refresh List</button>
+      <ul id="booklist"></ul>
+      
+    </div>
+    <div class="news">
+      <div class="infocard" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12046.093789330931!2d28.7975316!3d40.9919149!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6594147beb14e9b4!2zxLBzdGFuYnVsIEF5ZMSxbiDDnG5pdmVyc2l0ZXNp!5e0!3m2!1str!2str!4v1589661609838!5m2!1str!2str" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <h2 class="card-title" style="text-align: center;">Location Of Library</h2>
+        <p class="card-info" style="text-align: center;">You Can Come Whatever You Want...</p>
+      </div>
+      <div class="infocard" > <a href="https://www.harrypottertheplay.com/uk/mycursedchildjourney/">
+        <img src="cursed.jpg" class="card-image">
+        <h2 class="card-title">New Book Of Harry Potter</h2>
+        <p class="card-info">The new behind-the-scenes book, Harry Potter and the Cursed Child: The Journey, invites  you to go beyond the curtain of the award-winning stage production and learn all about how it came to be – including looking back on the earliest phases of development with producers Sonia Friedman and Colin Callender; crafting of the eighth Harry Potter story with J.K. Rowling...</p>
+        </a>
+      </div>
+      <div class="infocard"><a href="https://www.theguardian.com/books/2018/apr/10/the-fall-of-gondolin-new-jrr-tolkien-book-to-be-published-in-2018">
+        <img src="minas.jpg" class="card-image">
+        <h2 class="card-title">The Fall of Gondolin, 'new' JRR Tolkien book, to be published in 2018</h2>
+        <p class="card-info">JRR Tolkien’s The Fall of Gondolin, his tale of a beautiful, mysterious city destroyed by dark forces which The Lord of the Rings author called “the first real story” of Middle-earth, will be published in August...</p>
+      </a>
+      </div>
+      <div class="infocard"><a href="https://www.nme.com/blogs/tv-blogs/the-winds-of-winter-release-date-chapters-1942288">
+        <img src="whitewalker.jpg" class="card-image">
+        <h2 class="card-title">The Winds Of Winter: release date, pre-release chapters, returning characters and everything we know</h2>
+        <p class="card-info">Every George R.R. Martin fan wants to know The Winds of Winter release date. It’s been nearly seven years since A Dance With Dragons, the most recent book in Martin’s A Song of Ice And Fire series. Numerous deadlines have been missed and fans are rabidly awaiting news of when book six will finally hit the shelves. Below you’ll find everything we know about The Winds of Winter so far, and we’ll update this page as we receive more news...</p>
+      </div>
+    </a>
+    </div>
+    <div id="criticism">
+    </div>
+    <div style="clear:both;"></div>
+    <div class="about" id="footer">
+      <footer>
+        <div class="footercontainer">
+          <div class="LocationCol">
+            <h2>Location<i class="fas fa-map-marked-alt"></i></h2>
+            <h4>Beşyol, İnönü Cd. No:38, 34295<br> Küçükçekmece/İstanbul</h4>
+           
+          </div>
+          <div class="NumberCol">
+            <h2>Contact Number:</h2>
+            <hr>
+            <h3><i class="fas fa-phone"></i>05532821614</h3>
+          </div>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a> 
+          <a href="https://linkedin.com/in/olcayisik"><i class="fab fa-linkedin"></i></a>  
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>  
+          <a href="https://www.instagram.com/olcaytug20/"><i class="fab fa-instagram"></i></a>  
+          
+          <div style="clear:both;"></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="summary">
+    <div class="header">
+      <h2>Summary</h2>
+      <label onclick="turnback()" class="fas fa-times"></label>
+    </div>
+    <p id="summarytext"></p>
+</div>
+
+<div id="donatebodydiv">
+  <img src="donatebook.jpeg" class="backgroundpicture"> 
+  <div class="donatecontainer">
+      <div class="donateform" id="inputform">           
+
+              <table id="donate" class="donateinputgroup"> 
+                <tbody>
+          <tr>
+              <td>
+                  <label>Book İmage</label>
+              </td>
+              <td>
+                    <input type="text" id="bkimage" class="inputfield" placeholder="Please Enter as a .jpg" style="float:left;">
+              </td>                   
+          </tr>
+
+          <tr>
+              <td>
+                  <label>Book Name</label>
+              </td>
+              <td>
+               <input type="text" id="bkname" class="inputfield" placeholder="BookName">
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                  <label>Stock of Book</label>
+              </td>
+              <td>
+                  <input type="text" id="bkstock" class="inputfield" placeholder="How Many Books Do You Want to Donate ?">
+              </td>
+              <td>
+                  <button type="button" class="donatebtn" id="addbutton" onclick="addbook()" onclick="errormessage()"><i class="fas fa-book-medical"></i></button>
+                  
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                  <label>Book Summary</label>
+              </td>
+              <td>
+                  <textarea id="bksummary" class="inputfield" rows="10" cols="50"> </textarea>
+              </td>
+          </tr>
+  </tbody>
+  </table>
+      </div>
+  </div>
+</div>
+          <div id="commnetbodydiv"  style="display:none"> 
+                    <div id="containerform">
+                      <div class="form-group clearfloat"> 
+                        <div class="col-25">
+                        <label for="Select-Option">Options</label>         
+                      </div>  
+                      <div class="col-75">    
+                      <select id="commentform" name="Select-Option"  class="commentfield"></select>
+                    </div>   
+                    </div>
+                    <div class="form-group clearfloat">
+                      <div class="col-25">
+                      <label for="comment">Comment</label> 
+                    </div>   
+                    <div class="col-75">  
+                      <textarea type="text" class="commentfield" placeholder="Make your Comment" id="makecomment" name="comment" rows="10" cols="50"></textarea>
+                    </div>
+                  </div>
+                    <div class="form-group clearfloat">
+                      <div class="col-25">
+                      <label for="point">Score</label>  
+                      </div> 
+                    <div class="col-75">
+                      <select type="text" id="score" class="commentfield" name="point" placeholder="Please Enter Score"> </select>
+                    </div>
+                  </div>
+                    <input type="submit" onclick="controlcomment()" value="Submit" class="btn">
+                  </div>
+                    <br><hr><br>
+                    <div class="criticismliststyle">
+                <ul id="commentlist"></ul>
+              </div>
+              </div>
+    <script src="library.js"></script> 
+    <script src="jquery.js"></script>
+    </body>
+</html>
